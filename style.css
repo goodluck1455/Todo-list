@@ -343,4 +343,7 @@ iPhone eXpensive landscape · width: 734px
   .todo-time{
     width: 40%;
   }
+  .search input, .todoInput input{
+    margin-left: 40px;
+  }
 }
