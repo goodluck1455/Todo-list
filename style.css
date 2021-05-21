@@ -6,7 +6,7 @@
 
 .todoMain {
   background-color: rgb(157, 101, 201, .6);
-  background-image: url('./background.jpg');
+  background-image: url('./Images/background.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
