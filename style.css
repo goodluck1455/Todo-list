@@ -333,3 +333,14 @@ Iphone 6/7/8 plus
     margin-left: 20px;
   }
 }
+
+
+/*-------------------
+iPhone eXpensive landscape · width: 734px
+ --------------------*/
+
+@media screen and (max-width:734px) and (orientation: landscape){
+  .todo-time{
+    width: 40%;
+  }
+}
