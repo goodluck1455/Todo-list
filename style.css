@@ -329,4 +329,7 @@ Iphone 6/7/8 plus
   .todo-time {
     width: 50%;
   }
+  .search input, .todoInput input{
+    margin-left: 20px;
+  }
 }
