@@ -1,0 +1,332 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.todoMain {
+  background-color: rgb(157, 101, 201, .6);
+  background-image: url('./background.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  height: 200vh;
+  margin-top: 0px;
+  position: relative;
+  overflow: hidden;
+  position: relative;
+}
+
+.todoBody {
+    background: linear-gradient(rgb(157, 101, 201, 0.7), rgb(157, 101, 201, 0.3));
+  /* background: rgb(157, 101, 201); */
+  height: auto;
+  width: 60%;
+  top: 5%;
+  position: relative;
+  /* margin-left: 23rem;
+margin-right: 20rem; */
+  margin: 0rem auto;
+  box-shadow: 2px 2px 6px 1px #2a3d66;
+  position: relative;
+}
+
+.todo-time {
+ background: linear-gradient(rgb(157, 101, 201, 0.7), rgb(157, 101, 201, 0.3));
+  margin-top: -1.9rem;
+  font-weight: bold;
+  color: white;
+  font-size: 15px;
+  /* position: relative; */
+  width: 16%;
+  text-align: center;
+  padding: 7px;
+  float: right;
+  /* position: fixed; */
+  z-index: 9999;
+  /* box-shadow: 2px 6px 1px #2a3d66; */
+}
+
+/* .todo-time:after {
+    content: "";
+    background: #9d65c9;
+    position: absolute;
+    width: 6%;
+    height: 10%;
+    right: 10rem;
+    top: -1.9rem;
+    z-index: -1;
+    transform: skewX(30deg);
+    box-shadow: 2px 2px 6px 1px #2a3d66;
+} */
+
+.todoInput input {
+  border: none;
+  width: 80%;
+  margin-top: 5rem;
+  padding: 3px;
+  margin-left: 60px;
+  outline: none;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.todoInput input[placeholder],
+.search input[placeholder] {
+  text-align: center;
+}
+
+.fa-plus-circle {
+  background: white;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.search input {
+  border: none;
+  width: 80%;
+  margin-top: 20px;
+  padding: 3px;
+  margin-left: 60px;
+  outline: none;
+}
+
+/* .line {
+    text-decoration-line: line-through;
+} */
+
+.fa-search {
+  background: white;
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: #2a3d66;
+}
+
+.todoText {
+  color: black;
+  background-color: #2a3d66;
+  border-top-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin: 9px 2rem;
+  margin-top: 1rem;
+  /* margin-left: 2rem; */
+  /* width: 100%; */
+  /* position: absolute; */
+  height: auto;
+  display: flex;
+  align-content: space-between;
+}
+
+.todoText p {
+  /* overflow-wrap: break-word; */
+  margin-left: 19.3px;
+  padding-top: 4px;
+  color: white;
+  /* text-decoration-line: line-through; */
+}
+
+.todoText .fa-circle {
+  margin-left: 9px;
+  margin-top: 10px;
+  background: none;
+  border: 1px solid white;
+  /* text-decoration-line: line-through; */
+}
+
+.A-todoText {
+  overflow: hidden;
+  background-color: #2a3d66;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin-top: 1rem;
+  padding: 10px;
+  position: relative;
+  border-top-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  margin-left: 30px;
+  /* border-bottom: 4px solid black; */
+}
+
+.main-input {
+  border: none;
+  background: none;
+  color: white;
+  margin: 0 2rem;
+  width: 353px;
+  outline: none;
+  cursor: pointer;
+  /* text-decoration: line-through; */
+}
+
+.toggle {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.editButton {
+  outline: none;
+  border: none;
+  background: none;
+  color: lime;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.removeButton {
+  outline: none;
+  border: none;
+  background: none;
+  color: lime;
+  text-transform: uppercase;
+  cursor: pointer;
+  /* margin: 0 0.5rem; */
+}
+.removeButton:focus, .editButton:focus{
+  outline: none;
+}
+
+.B-todoText {
+  /* overflow-wrap: break-word; */
+  width: 100%;
+  /* background: white; */
+  margin-left: 1rem;
+}
+
+.todoText .fa-trash {
+  /* position: absolute; */
+  margin-left: 32rem;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+}
+
+.aline {
+  text-decoration: line-through;
+}
+
+.filtered {
+  display: none;
+}
+
+/*--------------------------------------
+    MEDIA QUERY BEGINS HERE
+-----------------------------------------*/
+
+/*-------------------
+ for iphones 
+ --------------------*/
+
+@media screen and (max-width: 375px) {
+  .todoBody {
+    width: 90%;
+  }
+  .search input {
+    margin-left: 30px;
+  }
+  .todoInput input {
+    margin-left: 30px;
+  }
+  .todo-time {
+    width: 34%;
+    left: 61%;
+    top: 3rem;
+  }
+  .A-todoText {
+    width: 95%;
+    margin-left: 10px;
+  }
+  .main-input {
+    margin: 0 0.5rem;
+  }
+}
+
+/*-------------------
+ Iphone 4
+ --------------------*/
+
+@media screen and (max-width: 320px) {
+  .A-todoText {
+    margin-left: 5px;
+  }
+  .main-input {
+    margin: 0 0.3rem;
+    width: 140px;
+  }
+}
+
+/*-------------------
+ Galaxy
+ --------------------*/
+
+@media screen and (max-width: 360px) {
+  .todo-time {
+    width: 39%;
+  }
+}
+
+/*-------------------
+ ipad
+ --------------------*/
+
+@media screen and (min-width: 768px) {
+  .todoBody {
+    width: 80%;
+  }
+  .todo-time {
+    width: 40%;
+  }
+}
+
+/*-------------------
+ Ipad Pro
+ --------------------*/
+
+@media screen and (min-width: 1024px) {
+  .main-input {
+    width: 553px;
+  }
+  /* .todo-time {
+        top: 6.5rem;
+    } */
+}
+
+/*-------------------
+ For small device
+ --------------------*/
+
+@media screen and (min-width: 540px) {
+  .todoBody {
+    width: 70%;
+  }
+}
+
+/*-------------------
+Iphone 6/7/8 plus
+ --------------------*/
+
+@media screen and (max-width: 414px) {
+  .todoBody {
+    width: 95%;
+  }
+  .A-todoText {
+    width: 95%;
+    margin-left: 10px;
+  }
+  .main-input {
+    margin: 0 0.5rem;
+  }
+  .todo-time {
+    width: 50%;
+  }
+}
